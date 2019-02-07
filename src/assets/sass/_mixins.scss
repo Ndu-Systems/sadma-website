@@ -1,0 +1,9 @@
+
+//clear fix for grid system
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
