@@ -1,0 +1,47 @@
+@import "../../assets/sass/variables";
+
+
+.home-main {
+  padding: 0;
+}
+
+.heading-section {
+  height: 140vh;
+
+  .box-header {
+    text-transform: uppercase;
+    backface-visibility: hidden;
+
+    .text-box {
+      position: absolute;
+      left: 50%;
+      left: 22vw;
+      top: 25vh;
+    }
+
+    .header-main {
+      display: block;
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: 0.5rem;
+
+      animation: moveInLeft 1s ease-in-out;
+    }
+
+    .tile-box {
+      position: absolute;
+      top: 35vh;
+      left: 18.5vw;
+      width: 60vw;
+      height: 100vh;
+      background: $zulu-yellow-color;
+    }
+  }
+
+}
+
+.playhouse-section{
+    height: 30vh;
+    text-align: center;  
+
+}
