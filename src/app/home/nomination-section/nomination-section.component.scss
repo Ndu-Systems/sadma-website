@@ -2,13 +2,98 @@
 
   .box-nominations{
     backface-visibility: hidden;
-
     .tile-box {
+      width: 1194px;
       position: absolute;
-      top: 190vh;
-      left: 18.5vw;
+      top: 160vh;
+      left: 21.5vw;
       width: 60vw;
-      height: 100vh;
-      background: $zulu-yellow-color;
+      height: 85vh;
+      background: none;
+  
+      img {
+        width: 398px;
+        height: 265px;
+        opacity: 0.3;
+  
+        &:hover{
+          opacity: 1;
+          cursor: pointer;
+        }
+      }
+    
+  
+      .row.dj {
+        margin-right: 9rem;    
+  
+  
+  
+        .icon {
+          height: 4rem;
+          position: absolute;
+          top: 25rem;
+          left: 7rem;
+         
+        }
+   
+  
+  
+        .text-box-sub {
+          width: 45rem;
+          text-align: center;
+  
+          .header-secondary {
+            display: block;
+            display: block;
+            margin-top: 10rem;
+            margin-bottom: 2rem;
+          }
+  
+          .paragraph {
+  
+            font-weight: 400;
+            font-size: .65rem;
+            line-height: 0;
+          }
+        }
+      }
+  
+      .container {
+        position: relative;
+      }
+  
+      .col-2-of-3{
+        background-image: linear-gradient(to right top,
+        rgba($zulu-yellow-color, 0.8),
+        rgba($zulu-yellow-color, 0.8)), url(../../../assets/images/bg1.jpg);
+        background-size: 81rem;
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 28vh;
+      }
+      .center{
+         
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        color: $white-color;
+        text-align: center;
+    }
+    a {
+      cursor: pointer;
+    }
+      .row [class^="col-"]:not(:last-child) {
+        margin-right: 0rem;
+      }
+  
+      .row {
+        max-width: 116rem;
+        margin: 0 auto;
+        padding: 0;
+      }
+  
+       
     }
   }

@@ -4,6 +4,7 @@ import { HomeComponent } from './home';
 import { NavBarComponent } from './nav-bar';
 import { PlayhouseComponent } from './home/playhouse';
 import { NominationSectionComponent } from './home/nomination-section';
+import { HeaderSectionComponent } from './home/header-section';
 
 const routes: Routes = [
   { 
@@ -16,7 +17,8 @@ export const declarations = [
   HomeComponent,
   NavBarComponent,
   PlayhouseComponent,
-  NominationSectionComponent
+  NominationSectionComponent,
+  HeaderSectionComponent
 ];
 
 @NgModule({
