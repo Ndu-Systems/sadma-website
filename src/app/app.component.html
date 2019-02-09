@@ -1,4 +1,33 @@
 <div class="app-main">
   <app-nav-bar></app-nav-bar>
   <router-outlet></router-outlet>
+  <section class="footer-section">
+    <div class="footer">
+      <div class="row">
+        <div class="col-1-of-3">
+          <h1>                           
+            © {{dateObj | date :'yyyy'}} SADMA
+          </h1>
+        </div>
+        <div class="col-1-of-3">
+          <h1>
+            <span class="links-header">
+              Quick Links
+            </span>
+            <span class="links">
+              <a routerLink="">Home</a>
+              <a routerLink="">Nominations</a>
+              <a routerLink="">Contact us</a>
+            </span>
+          </h1>
+        </div>
+        <div class="col-1-of-3">
+          <h1>
+            <span class="powered">powered by :</span>&nbsp;
+            <span class="ndu-systems">Ndu Systems PTY LTD</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>

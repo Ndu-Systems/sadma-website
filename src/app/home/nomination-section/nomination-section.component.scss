@@ -1,0 +1,14 @@
+@import '../../../assets/sass/variables';
+
+  .box-nominations{
+    backface-visibility: hidden;
+
+    .tile-box {
+      position: absolute;
+      top: 190vh;
+      left: 18.5vw;
+      width: 60vw;
+      height: 100vh;
+      background: $zulu-yellow-color;
+    }
+  }

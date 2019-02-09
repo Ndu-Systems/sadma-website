@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HomeComponent } from './home';
 import { NavBarComponent } from './nav-bar';
 import { PlayhouseComponent } from './home/playhouse';
+import { NominationSectionComponent } from './home/nomination-section';
 
 const routes: Routes = [
   { 
@@ -14,7 +15,8 @@ const routes: Routes = [
 export const declarations = [
   HomeComponent,
   NavBarComponent,
-  PlayhouseComponent
+  PlayhouseComponent,
+  NominationSectionComponent
 ];
 
 @NgModule({

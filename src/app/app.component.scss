@@ -1,4 +1,5 @@
 @import "../assets/sass/mixins";
+@import "../assets/sass/variables";
 
 .app-main {
   // background: #FBFCFC;
@@ -18,8 +19,34 @@
   border: none;
   height: 100%;
 
+  .footer-section{
+    height: 30vh;
+    .footer{
+      margin: 0 auto;
 
+      .links-header{
+        display: block;
+        margin-bottom: 1rem;        
+      }
 
+      .links{
+        font-weight: 400;
+        
+        a {
+          display: block;
+          color: $white-color;
+          margin-bottom: 0.75rem;
+          font-size: 1rem;
+        }
+      }
 
+      .powered{
+        font-weight: 400;
+        font-size: 1rem;
+        margin-left: 1rem;
+      }
+
+    }
+  }
 
 }
