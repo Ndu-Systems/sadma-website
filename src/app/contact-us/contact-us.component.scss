@@ -1,0 +1,24 @@
+.box-header{
+    height: 40vh;
+
+    .text-box {
+        text-align: center;       
+        left: 10vw;
+        top: 25vh;
+        position: absolute;
+      }
+      
+    .header-main {
+        display: block;
+        font-size: 3rem;
+        font-weight: 900;
+        letter-spacing: 0.5rem;
+        animation: moveInLeft 1s ease-in-out;
+        margin-bottom: 2rem;
+    }
+
+  .header-paragraph{
+    width: 50%;
+    margin: 0 auto;
+  }
+}

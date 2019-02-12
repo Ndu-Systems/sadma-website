@@ -5,12 +5,22 @@ import { NavBarComponent } from './nav-bar';
 import { PlayhouseComponent } from './home/playhouse';
 import { NominationSectionComponent } from './home/nomination-section';
 import { HeaderSectionComponent } from './home/header-section';
+import { NominationsComponent } from './nominations';
+import { ContactUsComponent } from './contact-us';
 
 const routes: Routes = [
   { 
     path: "",
     component: HomeComponent,
    },
+   { 
+    path: "nominations",
+    component: NominationsComponent,
+   },
+   { 
+    path: "contact-us",
+    component: ContactUsComponent,
+   }
 ];
 
 export const declarations = [
@@ -18,7 +28,9 @@ export const declarations = [
   NavBarComponent,
   PlayhouseComponent,
   NominationSectionComponent,
-  HeaderSectionComponent
+  HeaderSectionComponent,
+  NominationsComponent,
+  ContactUsComponent
 ];
 
 @NgModule({
