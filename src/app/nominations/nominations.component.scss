@@ -1,3 +1,4 @@
+@import '../../assets/sass/variables';
 .box-header{
     height: 40vh;
 
@@ -20,5 +21,41 @@
   .header-paragraph{
     width: 50%;
     margin: 0 auto;
+  }
+}
+
+.nominations-list-section{
+  height: 190vh;
+
+  .row{
+    padding: 6rem;
+  }
+  .header-main{
+    display: block;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;   
+    margin-bottom: 2rem;
+    padding-top: 5vh;
+  }
+
+  .text-box{
+    text-align: center;
+    background-image: linear-gradient(to right top,
+    rgba($zulu-yellow-color, 0.8),
+    rgba($zulu-yellow-color, 0.8)), url(../../assets/images/dj1.jpg);
+    background-size: 20rem;
+    background-position: top;
+    height: 15vh;
+    margin-bottom: 4rem;
+  }
+
+  .nominees{  
+    position: absolute;
+    left: 15.75vw;
+
+    img{
+      height: 14rem;
+    }
   }
 }
