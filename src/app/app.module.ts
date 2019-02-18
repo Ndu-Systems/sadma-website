@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { declarations, AppRouting } from './app.routing';
 import { NominationsComponent } from './nominations/nominations.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
  
 
 @NgModule({
@@ -16,7 +17,9 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
    ],
    imports: [
       BrowserModule,
-      AppRouting
+      AppRouting,
+      FormsModule,
+      ReactiveFormsModule ,
    ],
    providers: [],
    bootstrap: [

@@ -1,10 +1,105 @@
 <section class="box-header">
-    <div class="text-box">
-      <h1 class="header-main">Contact Us</h1>
-      <p class="header-paragraph">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt et exercitationem fugiat quasi saepe quidem,
-        suscipit ipsa repudiandae voluptatibus nulla natus aspernatur culpa dolorem, debitis cupiditate ut accusantium
-        sit earum!
-      </p>
-    </div>
-  </section>
+  <div class="text-box">
+    <h1 class="header-main">Contact Us</h1>
+    <p class="header-paragraph">
+      Contact us for more info or to join the team. We'll get back to you
+    </p>
+  </div>
+</section>
+<section class="contact-form">
+  <div class="row form-control">     
+      <form [formGroup]="rForm" >
+        <div class="col-2-of-3">
+            <div class="row">
+                <div class="col-1-of-2">
+                  <fieldset>
+                    <label for="firstName">First name</label>
+                    <input type="text" id="firstName" formControlName="firstName">
+                    <div class="alert" *ngIf="!rForm.controls['firstName'].valid && rForm.controls['firstName'].touched">
+                      First name is requried
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-1-of-2">
+                  <fieldset>
+                    <label for="sirname">Surname</label>
+                    <input type="text" id="surname" formControlName="surname">
+                    <div class="alert" *ngIf="!rForm.controls['surname'].valid && rForm.controls['surname'].touched">
+                      Surname is requried
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1-of-2">
+                  <fieldset>
+                    <label for="cell">Cell</label>
+                    <input type="text" id="cell" formControlName="cell">
+                    <div class="alert" *ngIf="!rForm.controls['cell'].valid && rForm.controls['cell'].touched">
+                      Cell number is requried
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-1-of-2">
+                  <fieldset>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" formControlName="email">
+                    <div class="alert" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">
+                      Email is requried
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="row">
+                <fieldset>
+                  <label for="message">Message</label>
+                  <textarea name="message" formControlName="message" id="message" cols="30" rows="10"></textarea>
+                  <div class="alert" *ngIf="!rForm.controls['message'].valid">
+                      Your message must be at least 15 characters
+                    </div>
+                </fieldset>
+              </div>
+              <div class="row">
+                  <fieldset>
+                  <button type="submit" >Submit</button>
+                  </fieldset>
+              </div>
+        </div>
+        <div class="col-1-of-3">
+          <h1>
+            <span class="heading-main">
+                CONTACT US
+            </span>
+            <span class="details">
+              <div class="row">
+                  <div class="col-1-of-2">
+                      Address
+                  </div>
+                  <div class="col-1-of-2">
+                      Durban, South point road
+                      3001
+                  </div>
+              </div> 
+              <div class="row">
+                  <div class="col-1-of-2">
+                      Email
+                  </div>
+                  <div class="col-1-of-2">
+                      queries@sadma.co.za
+                  </div>
+              </div>  
+              <div class="row">
+                  <div class="col-1-of-2">
+                      Phone
+                  </div>
+                  <div class="col-1-of-2">
+                      031 500 2135
+                  </div>
+              </div>             
+            </span>
+          </h1>
+        </div>      
+      </form>  
+     
+  </div>
+</section>

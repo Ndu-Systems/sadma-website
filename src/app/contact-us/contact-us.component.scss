@@ -1,24 +1,130 @@
-.box-header{
-    height: 40vh;
+@import "../../assets/sass/variables";
 
-    .text-box {
-        text-align: center;       
-        left: 10vw;
-        top: 25vh;
-        position: absolute;
-      }
-      
-    .header-main {
-        display: block;
-        font-size: 3rem;
-        font-weight: 900;
-        letter-spacing: 0.5rem;
-        animation: moveInLeft 1s ease-in-out;
-        margin-bottom: 2rem;
+.box-header {
+  height: 40vh;
+
+  .text-box {
+    text-align: center;
+    left: 40vw;
+    top: 20vh;
+    position: absolute;
+  }
+
+  .header-main {
+    display: block;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+    animation: moveInLeft 1s ease-in-out;
+    margin-bottom: 2rem;
+  }
+
+  .header-paragraph {
+
+    margin: 0 auto;
+  }
+}
+
+.contact-form {
+  height: 90vh;
+  padding: 11rem;
+  padding-top: 0rem;
+  .form-control{
+    background-color: lighten($color: $zulu-yellow-color, $amount: 0.6);  
+    height: 90vh;
+  }
+  form { 
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="time"],
+    input[type="url"],
+    textarea,
+    select {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      font-size: 2rem;
+      height: auto;
+      margin: 0;
+      outline: 0;
+      padding: 15px;
+      width: 100%;
+      background-color: #e8eeef;
+      color: $black-color;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+      margin-bottom: 15px;
+      border-radius: 0px;
     }
 
-  .header-paragraph{
-    width: 50%;
-    margin: 0 auto;
+ 
+    fieldset {
+      margin-bottom: 1rem;
+      border: none;
+    }
+
+    legend {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    label.light {
+      font-weight: 300;
+      display: inline;
+    }
+
+    .alert {
+      color: $red;
+      padding-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    .row{
+      margin-bottom: -4rem;
+    }
+
+    
+  button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #252525;
+    font-size: 22px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 10vw;
+    border: 1px solid #252525;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: absolute;
+    right: 40vw;
+  }
+
+  .details{
+    .row{
+    margin-right: 5rem;
+    font-size: 1.25555rem;
+    margin-bottom: -1.5rem;
+    font-weight: 500;
+    }
+  
+  }
+
   }
 }
