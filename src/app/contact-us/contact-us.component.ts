@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact-us',
@@ -8,14 +9,15 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class ContactUsComponent implements OnInit {
 
-  rForm : FormGroup;
-  firstName: string = "";
-  surname: string = "";
-  email: string = "";
-  cell: string = "";
-  message: string = "";
+  rForm: FormGroup;
+  firstName = '';
+  surname = '';
+  email = '';
+  cell = '';
+  message = '';
   constructor(
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private http: HttpClient
   ) {
     this.rForm = fb.group({
       firstName: [null, Validators.required],
@@ -33,6 +35,14 @@ export class ContactUsComponent implements OnInit {
    }
 
   ngOnInit() {
+  }
+
+  send(cont) {
+    this.http
+      .post<any>(`http://sadma.ndu-systems.net/email.php`, cont)
+      .subscribe(response => {
+        alert('Email Sent');
+      });
   }
 
 }

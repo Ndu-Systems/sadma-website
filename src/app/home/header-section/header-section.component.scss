@@ -34,18 +34,12 @@
     img {
       width: 332.8px;
       height: 265px;
-      opacity: 0.3;
-
-      &:hover{
-        opacity: 1;
-        cursor: pointer;
-      }
+      opacity: 0.4;     
     }
   
 
     .row.dj {
-      margin-right: 9rem;
-     
+      margin-right: 9rem;   
 
 
 
@@ -72,8 +66,7 @@
 
         .paragraph {
 
-          font-weight: 400;
-          font-size: .65rem;
+          font-weight: 400;       
           line-height: 0;
         }
       }
@@ -91,10 +84,19 @@
     
   }
   a {
-    cursor: pointer;
+  
+    color: $white-color;
   }
     .container {
+
       position: relative;
+
+      &:hover{         
+        img{
+          opacity: 1;
+        }      
+        cursor: pointer;
+      }
     }
 
     .col-2-of-3{

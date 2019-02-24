@@ -1,12 +1,12 @@
 @import '../../assets/sass/variables';
 .box-header{
-    height: 40vh;
+    height: 35vh;
 
     .text-box {
-        text-align: center;       
-        left: 10vw;
-        top: 25vh;
-        position: absolute;
+      text-align: center;
+      left: 35vw;
+      top: 25vh;
+      position: absolute;
       }
       
     .header-main {
@@ -19,8 +19,8 @@
     }
 
   .header-paragraph{
-    width: 50%;
     margin: 0 auto;
+    font-size: 2rem;
   }
 }
 

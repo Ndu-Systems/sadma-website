@@ -8,7 +8,7 @@
 </section>
 <section class="contact-form">
   <div class="row form-control">     
-      <form [formGroup]="rForm" >
+      <form [formGroup]="rForm" (ngSubmit)="send(rForm.value)" >
         <div class="col-2-of-3">
             <div class="row">
                 <div class="col-1-of-2">
