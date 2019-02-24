@@ -62,6 +62,8 @@
       border-radius: 0px;
     }
 
+     
+
  
     fieldset {
       margin-bottom: 1rem;
@@ -124,6 +126,63 @@
     font-weight: 500;
     }
   
+  }
+
+  .check-box{
+    h1{
+      font-size: 1.5rem;
+      text-transform: uppercase;      
+    }
+    input#check {
+      position: absolute;
+      opacity: 0;
+      
+      &:checked + label svg path {
+        stroke-dashoffset: 0;
+      }
+      
+      &:focus + label {
+        transform: scale(1.03);
+      }
+    }
+    
+    #check + label {
+      display: block;      
+      width: var(--d); height: var(--d);      
+      cursor: pointer;
+      transition: all .2s ease;
+      background: #FBFCFC;
+      
+      &:active {
+        transform: scale(1.05);      
+      }
+      
+      svg {
+        pointer-events: none;
+        path {			
+          fill: none;			
+          stroke: #333;
+          stroke-width: 4px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 100;
+          stroke-dashoffset: 101;
+          transition: all 350ms cubic-bezier(1,0,.37,.91);
+        }
+      }
+    }
+  }
+
+  .success{
+    color: green;
+    .top{
+      display: block;
+      font-size: 2rem;
+    }
+    .bottom{
+      font-size: 1rem;
+      font-weight: 400;
+    }
   }
 
   }

@@ -15,12 +15,31 @@ export class ContactUsComponent implements OnInit {
   email = '';
   cell = '';
   message = '';
+  nominee = '';
+  subject = '';
+  showSuccess = false;
+
+  // checkbox
+  marked = false;
+  theCheckbox = false;
+
+  // drop-down
+  options = ['1. Best record label',
+            '2. Best live performance',
+            '3. Best dance album'];
+
+
+  optionSelected: any;
+
   constructor(
     private fb: FormBuilder,
     private http: HttpClient
   ) {
     this.rForm = fb.group({
       firstName: [null, Validators.required],
+      optionSelected: [null, Validators.required],
+      subject: 'Client query',
+      nominee: [null, Validators.required],
       surname: [null, Validators.required],
       email: [
         null,
@@ -32,16 +51,28 @@ export class ContactUsComponent implements OnInit {
         Validators.compose([Validators.required, Validators.minLength(15)])
       ]
     });
-   }
+  }
 
   ngOnInit() {
   }
 
+  toggleVisibility(e) {
+    this.marked = e.target.checked;
+  }
+  onOptionsSelected(event) {
+    this.optionSelected = event;
+  }
+
   send(cont) {
+    if (this.marked) {
+      cont.message = ` I Nominate ${cont.nominee} <br/> For Category ${cont.optionSelected}`;
+      cont.subject = 'Nomination for SADMA';
+    }
     this.http
       .post<any>(`http://sadma.ndu-systems.net/email.php`, cont)
       .subscribe(response => {
-        alert('Email Sent');
+       this.showSuccess = true;
+       this.rForm.reset();
       });
   }
 
