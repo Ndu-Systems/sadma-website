@@ -1,6 +1,9 @@
 @import '../../../assets/sass/variables';
 
+ 
+
 .box-header {
+ 
   text-transform: uppercase;
   backface-visibility: hidden;
 
@@ -33,10 +36,11 @@
       background-image: linear-gradient(to right top,
         rgba($zulu-yellow-color, 0.8),
         rgba($zulu-yellow-color, 0.8)), url(../../../assets/images/bg1.jpg);
+        background-repeat: no-repeat;
       background-size: 81rem;
       background-position-x: 0;
       background-position-y: 0;
-      background-repeat: no-repeat;
+     
     }
   }
 
@@ -62,11 +66,8 @@
 
     img {
       max-width: 100%;
-      height: 265px;
-      opacity: 0.4;
-
-      &:hover {
-        opacity: 1;
+      height: 265px;    
+      &:hover {       
         cursor: pointer;
       }
     }

@@ -1,210 +1,39 @@
 @import '../../../assets/sass/variables';
 
-.center {
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 18px;
-  color: $white-color;
-  text-align: center;
-
-}
-
-.box-nominations {
+.box-nominations{
   backface-visibility: hidden;
+  padding: 2rem;
+
+  .col-1-of-3 {  
+    grid-gap: 0;
+    margin-bottom: 0;
+ 
+  }
 
   .tile-box {
-    width: 1194px;
     position: absolute;
-    top: 160vh;
-    left: 23vw;
-    width: 60vw;
-    height: 85vh;
+    top: 165vh;
+    left: 28rem;
+    max-width: 100%;
+    max-height: 100%;
     background: none;
 
     img {
-      width: 332.8px;
-      height: 265px;
-      opacity: 0.4;     
-    }
-  
-
-
-    .row.dj {
-      margin-right: 9rem;
-
-
-
-      .icon {
-        height: 4rem;
-        position: absolute;
-        top: 25rem;
-        left: 7rem;
-
-      }
-
-
-
-      .text-box-sub {
-        width: 45rem;
-        text-align: center;
-
-        .header-secondary {
-          display: block;
-          display: block;
-          margin-top: 10rem;
-          margin-bottom: 2rem;
-        }
-
-        .paragraph {
-
-          font-weight: 400;
+      max-width: 100%;
+      height: 265px;   
        
-          line-height: 0;
-        }
-      }
-    }
-
-    a {
-     
-      color: $white-color;
-    }
-
-
-    .container {
-
-      position: relative;
-
-      &:hover{         
-        img{
-          opacity: 1;
-        }      
+      &:hover {       
         cursor: pointer;
       }
     }
-
-    .col-2-of-3 {
-      background-image: linear-gradient(to right top,
-        rgba($zulu-yellow-color, 0.8),
-        rgba($zulu-yellow-color, 0.8)), url(../../../assets/images/bg1.jpg);
-      background-size: 81rem;
-      background-position: top;
-      background-repeat: no-repeat;
-      height: 28vh;
-    }
-
-
-
   
-    .row [class^="col-"]:not(:last-child) {
-      margin-right: 0rem;
-    }
+  
 
-    .row {
-      max-width: 116rem;
-      margin: 0 auto;
-      padding: 0;
-    }
 
 
   }
 
-  .popup {
-
-    &__content {
-      width: 50%;
-      height: 45rem;
-      background-image: linear-gradient(to right top,
-        rgba($zulu-yellow-color, 0.8),
-        rgba($zulu-yellow-color, 0.8));
-    }
-
-    &__close {
-      color: $white-color;
-    }
-
-    &__header-main {
-      position: absolute;
-      left: 35rem;
-      top: 5rem;
-      font-size: 4rem;
-
-    }
-
-    &__header-secondary {
-      position: absolute;
-      left: 35rem;
-      top: 15rem;
-      font-size: 2rem;
-    }
-
-
-    .row {
-      margin: 15rem auto;
-    }
-
-    .container {
-      position: relative;
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
-
-    img {
-      width: 250px;
-    }
-
-
-    &__left {
-      img {
-        position: absolute;
-        top: 25vh;
-        left: 2rem;
-      }
-    }
-
-    p{
-      position: absolute;
-      top: 38rem;
-    }
-
-    .btn{
-      border-radius: 0;
-      padding: 1.5em 2.5em;
-      font-size: 1rem;
-      text-transform: uppercase;
-      color: white;
-      font-weight: 600;
-      border: 3px solid;
-      background: none;
-  }
-  
-  .btn-transparent{
-    margin-top: 35rem;
-    margin-left: 2rem;;
-  }
-  .btn::after {
-      content: "";
-      display: inline-block;
-      height: 100%;
-      width: 100%;         
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      transition: all .4s;
-    }
-  
-    .btn-transparent::after {
-      background-color: $zulu-yellow-color;
-    }
-  
-    .btn:hover::after{
-      transform: scaleX(1.4) scaleY(1.6);
-      opacity: 0;
-    }
-  }
 }
+
+
+ 

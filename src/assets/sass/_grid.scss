@@ -48,3 +48,51 @@
     width: calc(3 * ((100% - 3 * #{$gutter-horizontal})/4) + 2 * #{$gutter-horizontal});
   }
 }
+
+.col-1-of-2 {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-gap: 3rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem; 
+}
+.col-1-of-3 {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-gap: 3rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem; 
+}
+
+.col-2-of-3 {
+    display: grid;
+    grid-template-columns: 66.66% 33.33%;
+    grid-gap: 3rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem; 
+}
+
+.col-1-of-4 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 3rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem; 
+}
+
+.col-2-of-4 {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-gap: 3rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem; 
+}
+
+.col-2-of-4 {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-gap: 3rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem; 
+}
+
