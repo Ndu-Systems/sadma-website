@@ -5,6 +5,14 @@ $white-color : #FBFCFC;
 $cloud-color: #F7F9F9;
 $black-color: #252525;
 $gray-color: #808B96;
+$background: #fefefe;
+$text: #4b507a;
+$cyan: #60daaa;
+$yellow: #fbca67;
+$orange: #ff8a30;
+$red: #f45e61;
+$purple: #6477b9;
+$blue: #0eb7da;
 
 //Grid values
 $grid-width: 114rem;
@@ -12,13 +20,14 @@ $gutter-vertical: 6rem;
 $gutter-horizontal: 6rem;
 
 
-//Colors
-$background: #fefefe;
-$text: #4b507a;
+//Break point variables
+$bp-largest:75em; //1200px
+$bp-large:68.75em; //1100px 
+$bp-large-s:64em; //1024px 
 
-$cyan: #60daaa;
-$yellow: #fbca67;
-$orange: #ff8a30;
-$red: #f45e61;
-$purple: #6477b9;
-$blue: #0eb7da;
+$bp-medium: 56.25em; //900px
+$bp-medium-s: 51.375em; //822px
+$bp-medium-xs: 46.875em; //750px
+
+$bp-semi-small: 41.5625em; //665px
+$bp-small:28.125em;  //450px

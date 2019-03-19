@@ -69,7 +69,7 @@ export class ContactUsComponent implements OnInit {
       cont.subject = 'Nomination for SADMA';
     }
     this.http
-      .post<any>(`http://sadma.ndu-systems.net/email.php`, cont)
+      .post<any>(`http://sadma2012.co.za/email.php`, cont)
       .subscribe(response => {
        this.showSuccess = true;
        this.rForm.reset();
