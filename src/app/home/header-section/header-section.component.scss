@@ -115,6 +115,7 @@
     }
   }
 }
+
 @media only screen and (max-width: $bp-large) {
   .box-header {
     .tile-box {
@@ -122,17 +123,35 @@
     }
   }
 }
+
 @media only screen and (max-width: $bp-large-s) {
   .box-header {
     .text-box {
       top: 12vh;
     }
+
     .tile-box {
       left: 0;
       top: 20vh;
+
       img {
         height: 20vh;
       }
     }
+  }
+}
+
+@media only screen and (max-width: $bp-small-s) {
+  .box-header {
+    .tile-box {
+      left: 1vw;
+      img {
+        height: 30vh;
+      }
+    }
+    .col-1-of-3, .col-2-of-3{  
+      grid-template-columns: 100%;
+    }
+    
   }
 }

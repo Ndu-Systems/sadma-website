@@ -1,24 +1,25 @@
 @import '../../assets/sass/variables';
-.box-header{
-    height: 35vh;
 
-    .text-box {
-      text-align: center;
-      left: 35vw;
-      top: 25vh;
-      position: absolute;
-      }
-      
-    .header-main {
-        display: block;
-        font-size: 3rem;
-        font-weight: 900;
-        letter-spacing: 0.5rem;
-        animation: moveInLeft 1s ease-in-out;
-        margin-bottom: 2rem;
-    }
+.box-header {
+  height: 35vh;
 
-  .header-paragraph{
+  .text-box {
+    text-align: center;
+    left: 35vw;
+    top: 25vh;
+    position: absolute;
+  }
+
+  .header-main {
+    display: block;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+    animation: moveInLeft 1s ease-in-out;
+    margin-bottom: 2rem;
+  }
+
+  .header-paragraph {
     margin: 0 auto;
     font-size: 2rem;
   }
@@ -30,9 +31,10 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-y: -14rem;
+
   .banner {
     position: absolute;
-    top:40rem;
+    top: 40rem;
     left: 2rem;
     padding: 2%;
     background: $gray-dark-color;
@@ -46,11 +48,12 @@
   }
 }
 
-.nominations-list-section{
+.nominations-list-section {
   height: 250vh;
 
   .slogan {
     padding: 2%;
+
     h1 {
       font-size: 2rem;
       font-weight: 400;
@@ -58,7 +61,7 @@
     }
   }
 
-  .col-1-of-3 {   
+  .col-1-of-3 {
     grid-gap: 0.5rem;
     box-sizing: border-box;
     margin-bottom: 0;
@@ -69,7 +72,7 @@
     flex: 0 1 24%;
     justify-content: center;
   }
-   
+
 
   .tile-box {
     position: absolute;
@@ -94,38 +97,65 @@
 
 @media only screen and (max-width: $bp-largest) {
   .nominations-list-section {
-    .col-1-of-3 {   
-      grid-gap: 0; 
+    .col-1-of-3 {
+      grid-gap: 0;
     }
+
     .tile-box {
       left: 0;
     }
-  
+
   }
-    
+
 }
 
 
 @media only screen and (max-width: $bp-large-s) {
 
-    .box-header {
-      height: 15vh;
+  .box-header {
+    height: 15vh;
 
-      .text-box {
-        top: 10vh;
-      }
-    }
-
-    .deck {
-      height: 35vh;
-    }
-
-    .nominations-list-section {
-      height: 170vh;
-
-      .tile-box {
-        top: 55vh;
-      }
+    .text-box {
+      top: 10vh;
     }
   }
-  
+
+  .deck {
+    height: 35vh;
+  }
+
+  .nominations-list-section {
+    height: 170vh;
+
+    .tile-box {
+      top: 55vh;
+    }
+  }
+}
+
+
+@media only screen and (max-width: $bp-small-s) {
+  .deck {
+    height: 15vh;
+
+    .banner {
+      top: 25rem;
+    }
+  }
+
+  .nominations-list-section {
+    height: 884vh;
+    .col-1-of-3 {
+      grid-template-columns: 100%;
+      padding-bottom: 2rem;
+    }
+
+    .tile-box {
+      top: 35vh;
+    }
+
+    .card {
+      margin-bottom: 1rem;
+    }
+  }
+}

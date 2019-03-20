@@ -212,6 +212,7 @@
     .form-control {
       height: 45vh;
     }
+
     .details {
       font-size: 1.2rem;
     }
@@ -236,5 +237,43 @@
         right: 40vw;
       }
     }
+  }
+}
+
+
+//media queries
+@media only screen and (max-width: $bp-small-s) {
+
+  .box-header {
+    .text-box {
+      left: 27vw;
+    }
+  }
+
+  .contact-form {
+    padding: 2rem;
+    height: 100vh;
+
+    .col-1-of-2 {
+      grid-template-columns: 100%;
+    }
+    .col-2-of-3 {
+      grid-template-columns: 100%;
+    }
+ .form-control {
+  height: 98vh;
+ }
+    form {
+      button {
+        padding: 19px 70px 18px 39px;
+        right: 5vw;
+        top: 120rem;
+       }
+
+       .details {      
+          margin-top: 10rem;
+       }
+    }
+
   }
 }
