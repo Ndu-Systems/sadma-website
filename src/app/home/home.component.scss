@@ -26,6 +26,14 @@
 
 .nomination-section {
   height: 90vh;
- 
+}
 
+//Media queries
+@media only screen and (max-width: $bp-large-s) {
+  .heading-section {
+    height: 80vh;
+  }
+  .nomination-section {
+    height: 75vh;
+  }
 }

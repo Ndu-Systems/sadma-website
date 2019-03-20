@@ -90,6 +90,7 @@
   }
 }
 
+//Media queries
 @media only screen and (max-width: $bp-largest) {
   .nominations-list-section {
     .col-1-of-3 {   
@@ -102,3 +103,28 @@
   }
     
 }
+
+
+@media only screen and (max-width: $bp-large-s) {
+
+    .box-header {
+      height: 15vh;
+
+      .text-box {
+        top: 10vh;
+      }
+    }
+
+    .deck {
+      height: 35vh;
+    }
+
+    .nominations-list-section {
+      height: 170vh;
+
+      .tile-box {
+        top: 55vh;
+      }
+    }
+  }
+  
