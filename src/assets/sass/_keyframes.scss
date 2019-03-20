@@ -42,3 +42,35 @@
        transform: translate(0);
    }
 }
+
+@keyframes slide-menu {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes show-x {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes menu-item-animate {
+    from {
+        transform: translateY(60%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

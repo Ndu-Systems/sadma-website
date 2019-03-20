@@ -1,19 +1,45 @@
 <div class="nav">
-    <a routerLink="/" class="logo">
-      <img src="../../assets/images/logo.svg" alt="logo">
-    </a>
-    <div class="menu">
-      <ul>
-        <li>
-          <a routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">home</a>
-        </li>
-        <li>
-          <a routerLink="nominations" routerLinkActive="active-link">Nominations</a>
-        </li>
-        <li>
-          <a routerLink="contact-us" routerLinkActive="active-link" >Contact us</a>
-        </li>
-         
-      </ul>
-    </div>
+  <a routerLink="/" class="logo">
+    <img src="assets/images/logo.svg" alt="logo">
+  </a>
+  <div class="menu">
+    <ul>
+      <li>
+        <a routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">home</a>
+      </li>
+      <li>
+        <a routerLink="nominations" routerLinkActive="active-link">Nominations</a>
+      </li>
+      <li>
+        <a routerLink="contact-us" routerLinkActive="active-link">Contact us</a>
+      </li>
+    </ul>
   </div>
+  <div class="burger-menu">
+    <img src="assets/images/burger-menu.svg" alt="burger menu" (click)="toggleNav()">
+  </div>
+</div>
+
+ 
+<div class="mobile-nav-items" *ngIf="showNav">
+  <div class="logo-li">
+    <a routerLink="" (click)="toggleNav()">
+        <img src="assets/images/logo.svg" class="logo-mobi" alt="logo">
+    </a> 
+      <img src="assets/images/close.svg" class="close-btn" (click)="toggleNav()"  alt="close">
+  </div>
+  <ul>
+      <li>
+          <a routerLink="" (click)="toggleNav()" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">home</a>
+        </li>
+        <li>
+          <a routerLink="nominations" (click)="toggleNav()">Nominations</a>
+        </li>
+        <li>
+          <a routerLink="contact-us" (click)="toggleNav()">Contact us</a>
+        </li>
+      
+  </ul>
+
+
+</div>
