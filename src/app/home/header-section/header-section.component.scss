@@ -1,9 +1,9 @@
 @import '../../../assets/sass/variables';
 
- 
+
 
 .box-header {
- 
+
   text-transform: uppercase;
   backface-visibility: hidden;
 
@@ -36,17 +36,18 @@
       background-image: linear-gradient(to right top,
         rgba($zulu-yellow-color, 0.8),
         rgba($zulu-yellow-color, 0.8)), url(../../../assets/images/bg1.jpg);
-        background-repeat: no-repeat;
-      background-size: 81rem;
+      background-repeat: no-repeat;
+      background-size: 100%;
       background-position-x: 0;
       background-position-y: 0;
-     
+
     }
   }
 
   .card {
     display: flex;
-    justify-content: space-between;
+    flex: 0 1 24%;
+    justify-content: center;
   }
 
   .text-box {
@@ -56,7 +57,7 @@
     position: absolute;
   }
 
-.tile-box {
+  .tile-box {
     position: absolute;
     top: 35vh;
     left: 28rem;
@@ -66,8 +67,9 @@
 
     img {
       max-width: 100%;
-      height: 265px;    
-      &:hover {       
+      height: 28vh;
+
+      &:hover {
         cursor: pointer;
       }
     }
@@ -100,13 +102,30 @@
     a {
       color: $white-color;
     }
- 
-
-  
-
-
 
   }
 
+}
 
+//Media queries
+@media only screen and (max-width: $bp-largest) {
+  .box-header {
+    .tile-box {
+      left: 15rem;
+    }
+  }
+}
+@media only screen and (max-width: $bp-large) {
+  .box-header {
+    .tile-box {
+      left: 8rem;
+    }
+  }
+}
+@media only screen and (max-width: $bp-large-s) {
+  .box-header {
+    .tile-box {
+      left: 0;
+    }
+  }
 }

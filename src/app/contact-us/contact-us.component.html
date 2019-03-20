@@ -7,10 +7,10 @@
   </div>
 </section>
 <section class="contact-form">
-  <div class="row form-control">
+  <div class="form-control">
     <form [formGroup]="rForm" (ngSubmit)="send(rForm.value)">
       <div class="col-2-of-3">
-        <div class="row">
+        <div class="">
           <div class="col-1-of-2">
             <fieldset>
               <label for="firstName">First name</label>
@@ -19,8 +19,6 @@
                 First name is requried
               </div>
             </fieldset>
-          </div>
-          <div class="col-1-of-2">
             <fieldset>
               <label for="sirname">Surname</label>
               <input type="text" id="surname" formControlName="surname">
@@ -29,8 +27,6 @@
               </div>
             </fieldset>
           </div>
-        </div>
-        <div class="row">
           <div class="col-1-of-2">
             <fieldset>
               <label for="cell">Cell</label>
@@ -39,8 +35,6 @@
                 Cell number is requried
               </div>
             </fieldset>
-          </div>
-          <div class="col-1-of-2">
             <fieldset>
               <label for="email">Email</label>
               <input type="text" id="email" formControlName="email">
@@ -49,16 +43,12 @@
               </div>
             </fieldset>
           </div>
-        </div>
-        <div class="row check-box">
-          <div class="col-1-of-2">
+          <div class="col-1-of-2 check-box">
             <fieldset>
               <h1>I want to nominate</h1>
             </fieldset>
-          </div>
-          <div class="col-1-of-2">
             <fieldset>
-              <input type="checkbox" id="check" (change)="toggleVisibility($event)"/>
+              <input type="checkbox" id="check" (change)="toggleVisibility($event)" />
               <label for="check" style="--d: 4rem;">
                 <svg viewBox="0,0,50,50">
                   <path d="M5 30 L 20 45 L 45 5"></path>
@@ -66,84 +56,82 @@
               </label>
             </fieldset>
           </div>
-        </div>
-        <div class="row" *ngIf="!marked else nominate">
-          <fieldset>
-            <label for="message">Message</label>
-            <textarea name="message" formControlName="message" id="message" cols="30" rows="10"></textarea>
-            <div class="alert" *ngIf="!rForm.controls['message'].valid">
-              Your message must be at least 15 characters
-            </div>
-          </fieldset>
-        </div>
-        <div class="row">
-            <ng-template #nominate>
+          <div class="" *ngIf="!marked else nominate">
+            <fieldset>
+              <label for="message">Message</label>
+              <textarea name="message" formControlName="message" id="message" cols="30" rows="10"></textarea>
+              <div class="alert" *ngIf="!rForm.controls['message'].valid">
+                Your message must be at least 15 characters
+              </div>
+            </fieldset>
+          </div>
+          <ng-template #nominate>
+            <div class="col-1-of-2">
               <fieldset>
-                  <select class='select-option' required formControlName='optionSelected' (ngModelChange)='onOptionsSelected($event)'>
-                      <option class='option' *ngFor='let option of options' [value]="option">{{option}}</option>
-                  </select>
+                <select class='select-option' required formControlName='optionSelected' (ngModelChange)='onOptionsSelected($event)'>
+                  <option class='option' *ngFor='let option of options' [value]="option">{{option}}</option>
+                </select>
               </fieldset>
               <fieldset>
-                  <input type="text" id="nominee" formControlName="nominee">
-                  <div class="alert" *ngIf="!rForm.controls['nominee'].valid && rForm.controls['nominee'].touched">
-                    Nominee name is requried
-                  </div>
-              </fieldset>                
-            </ng-template>
-        </div>
-        <div class="row">
-          <fieldset>
-            <button type="submit">Submit</button>
-          </fieldset>
-        </div>
-        <div class="row">
-          <fieldset>
-            <h1 class="success" *ngIf="showSuccess">
+                <input type="text" id="nominee" formControlName="nominee">
+                <div class="alert" *ngIf="!rForm.controls['nominee'].valid && rForm.controls['nominee'].touched">
+                  Nominee name is requried
+                </div>
+              </fieldset>
+            </div>
+          </ng-template>
+
+          <div class="col-1-of-2">
+            <fieldset>
+              <h1 class="success" *ngIf="showSuccess">
                 <span class="top">
-                    Success Thank you for your feedback!
-                </span>  
-                <span class="bottom">
-                    SMS voting lines will be Opened Soon T&Cs apply.
+                  Success Thank you for your feedback!
                 </span>
-            </h1>
-          </fieldset>
+                <span class="bottom">
+                  SMS voting lines will be Opened Soon T&Cs apply.
+                </span>
+              </h1>
+            </fieldset>
+            <fieldset>
+              <button type="submit">Submit</button>
+            </fieldset>
+          </div>
         </div>
-      </div>
-      <div class="col-1-of-3">
-        <h1>
-          <span class="heading-main">
-            CONTACT US
-          </span>
-          <span class="details">
-            <div class="row">
-              <div class="col-1-of-2">
-                Address
-              </div>
-              <div class="col-1-of-2">
-                Durban, South point road
-                3001
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-1-of-2">
-                Email
-              </div>
-              <div class="col-1-of-2">
-                queries@sadma.co.za
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-1-of-2">
-                Phone
-              </div>
-              <div class="col-1-of-2">
-                031 500 2135
-              </div>
-            </div>
-          </span>
-        </h1>
+        <div class="">
+           <h1>
+              <span class="heading-main">
+                  CONTACT US
+                </span>            
+           </h1>
+           <h1 class="details">          
+                  <div class="col-1-of-2">
+                    <span class="paragraph">
+                        Address :
+                    </span>
+                    <span class="paragraph">
+                        Durban, South Africa 
+                    </span>
+                  </div>
+                  <div class="col-1-of-2">
+                    <span class="paragraph">
+                        Email :
+                    </span>
+                    <span class="paragraph">
+                        hello@sadma2012.co.za
+                    </span>
+                  </div>
+                  <div class="col-1-of-2">
+                    <span class="paragraph">
+                        WhatsApp :
+                    </span>
+                    <span class="paragraph">
+                        0813506956
+                    </span>
+                  </div>
+              
+           </h1>
+        </div>
       </div>
     </form>
-
   </div>
 </section>

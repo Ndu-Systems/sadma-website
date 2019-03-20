@@ -26,14 +26,18 @@
 }
 
 .contact-form {
+
   height: 90vh;
   padding: 11rem;
   padding-top: 0rem;
-  .form-control{
-    background-color: lighten($color: $zulu-yellow-color, $amount: 0.6);  
+
+  .form-control {
+    padding: 2%;
+    background-color: lighten($color: $zulu-yellow-color, $amount: 0.6);
     height: 90vh;
   }
-  form { 
+
+  form {
 
     input[type="text"],
     input[type="password"],
@@ -62,9 +66,9 @@
       border-radius: 0px;
     }
 
-     
 
- 
+
+
     fieldset {
       margin-bottom: 1rem;
       border: none;
@@ -94,96 +98,97 @@
       font-size: 1.5rem;
     }
 
-    .row{
-      margin-bottom: -4rem;
-    }
 
-    
-  button {
-    padding: 19px 39px 18px 39px;
-    color: #FFF;
-    background-color: #252525;
-    font-size: 22px;
-    text-align: center;
-    font-style: normal;
-    border-radius: 5px;
-    width: 10vw;
-    border: 1px solid #252525;
-    border-width: 1px 1px 3px;
-    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
-    margin-bottom: 10px;
-    cursor: pointer;
-    text-transform: uppercase;
-    position: absolute;
-    right: 40vw;
-  }
 
-  .details{
-    .row{
-    margin-right: 5rem;
-    font-size: 1.25555rem;
-    margin-bottom: -1.5rem;
-    font-weight: 500;
-    }
-  
-  }
-
-  .check-box{
-    h1{
-      font-size: 1.5rem;
-      text-transform: uppercase;      
-    }
-    input#check {
-      position: absolute;
-      opacity: 0;
-      
-      &:checked + label svg path {
-        stroke-dashoffset: 0;
-      }
-      
-      &:focus + label {
-        transform: scale(1.03);
-      }
-    }
-    
-    #check + label {
-      display: block;      
-      width: var(--d); height: var(--d);      
+    button {
+      padding: 19px 39px 18px 39px;
+      color: #FFF;
+      background-color: #252525;
+      font-size: 22px;
+      text-align: center;
+      font-style: normal;
+      border-radius: 5px;
+      width: 10vw;
+      border: 1px solid #252525;
+      border-width: 1px 1px 3px;
+      box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+      margin-bottom: 10px;
       cursor: pointer;
-      transition: all .2s ease;
-      background: #FBFCFC;
-      
-      &:active {
-        transform: scale(1.05);      
+      text-transform: uppercase;
+      position: absolute;
+      right: 40vw;
+    }
+
+    .details {
+      margin-top: 2rem;
+      font-weight: 500;
+      .col-1-of-2 {
+        grid-template-columns: 40% auto;
       }
-      
-      svg {
-        pointer-events: none;
-        path {			
-          fill: none;			
-          stroke: #333;
-          stroke-width: 4px;
-          stroke-linecap: round;
-          stroke-linejoin: round;
-          stroke-dasharray: 100;
-          stroke-dashoffset: 101;
-          transition: all 350ms cubic-bezier(1,0,.37,.91);
+
+    }
+
+    .check-box {
+      h1 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+
+      input#check {
+        position: absolute;
+        opacity: 0;
+
+        &:checked+label svg path {
+          stroke-dashoffset: 0;
+        }
+
+        &:focus+label {
+          transform: scale(1.03);
+        }
+      }
+
+      #check+label {
+        display: block;
+        width: var(--d);
+        height: var(--d);
+        cursor: pointer;
+        transition: all .2s ease;
+        background: #FBFCFC;
+
+        &:active {
+          transform: scale(1.05);
+        }
+
+        svg {
+          pointer-events: none;
+
+          path {
+            fill: none;
+            stroke: #333;
+            stroke-width: 4px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-dasharray: 100;
+            stroke-dashoffset: 101;
+            transition: all 350ms cubic-bezier(1, 0, .37, .91);
+          }
         }
       }
     }
-  }
 
-  .success{
-    color: green;
-    .top{
-      display: block;
-      font-size: 2rem;
+    .success {
+      color: green;
+
+      .top {
+        display: block;
+        font-size: 2rem;
+      }
+
+      .bottom {
+        font-size: 1rem;
+        font-weight: 400;
+      }
     }
-    .bottom{
-      font-size: 1rem;
-      font-weight: 400;
-    }
-  }
 
   }
 }
