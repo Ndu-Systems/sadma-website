@@ -135,13 +135,22 @@
 
 
 @media only screen and (max-width: $bp-small-s) {
+
+  .text-box {
+    .header-main {
+      font-size: 6rem;
+    }
+  }
   .deck {
     height: 15vh;
 
     .banner {
-      top: 25rem;
+      top: 50rem;
+      left: 25rem;
     }
   }
+
+
 
   .nominations-list-section {
     height: 884vh;

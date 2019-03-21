@@ -99,7 +99,7 @@
     padding: 3rem;
     display: grid;
     grid-template-columns: repeat(3, 33.33%);
-    width: 80%;
+    width: 100%;
 
     a {
       color: $cloud-color;
@@ -159,7 +159,10 @@
  
     .nav  {
       .logo {
-        left: 5rem;
+        img {
+          height: 12rem;
+        }
+     
       }
 
       .menu {
@@ -170,12 +173,29 @@
         display: block;
         position: absolute;
         top: 4rem;
-        right: 5rem;
+        right: 10rem;
         cursor: pointer;
         img {
-          height: 3rem;
+          height: 7rem;
         }
       }
+    }
+
+    .mobile-nav-items {
+      padding: 5rem;
+
+      .logo-mobi {
+        height: 15rem;
+      }
+     
+        ul {
+          margin: 30% auto 0 auto;
+
+          a {
+            font-size: 4rem;
+          }
+        }
+     
     }
 }
 

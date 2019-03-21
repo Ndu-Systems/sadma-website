@@ -247,6 +247,11 @@
   .box-header {
     .text-box {
       left: 27vw;
+
+      .header-main {
+        font-size: 6rem;
+      }
+
     }
   }
 
@@ -257,22 +262,25 @@
     .col-1-of-2 {
       grid-template-columns: 100%;
     }
+
     .col-2-of-3 {
       grid-template-columns: 100%;
     }
- .form-control {
-  height: 98vh;
- }
+
+    .form-control {
+      height: 98vh;
+    }
+
     form {
       button {
         padding: 19px 70px 18px 39px;
         right: 5vw;
-        top: 120rem;
-       }
 
-       .details {      
-          margin-top: 10rem;
-       }
+      }
+
+      .details {
+        margin-top: 10rem;
+      }
     }
 
   }

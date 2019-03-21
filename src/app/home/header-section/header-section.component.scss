@@ -143,8 +143,12 @@
 
 @media only screen and (max-width: $bp-small-s) {
   .box-header {
+
+   .text-box {
+     left: 18rem;
+   }
     .tile-box {
-      left: 1vw;
+      left: 10vw;
       img {
         height: 30vh;
       }

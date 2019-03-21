@@ -20,26 +20,23 @@
   </div>
 </div>
 
- 
+
 <div class="mobile-nav-items" *ngIf="showNav">
   <div class="logo-li">
     <a routerLink="" (click)="toggleNav()">
-        <img src="assets/images/logo.svg" class="logo-mobi" alt="logo">
-    </a> 
-      <img src="assets/images/close.svg" class="close-btn" (click)="toggleNav()"  alt="close">
+      <img src="assets/images/logo.svg" class="logo-mobi" alt="logo">
+    </a>
+    <img src="assets/images/close.svg" class="close-btn" (click)="toggleNav()" alt="close">
   </div>
   <ul>
-      <li>
-          <a routerLink="" (click)="toggleNav()" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">home</a>
-        </li>
-        <li>
-          <a routerLink="nominations" (click)="toggleNav()">Nominations</a>
-        </li>
-        <li>
-          <a routerLink="contact-us" (click)="toggleNav()">Contact us</a>
-        </li>
-      
+    <li>
+      <a routerLink="" (click)="toggleNav()" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">home</a>
+    </li>
+    <li>
+      <a routerLink="nominations" (click)="toggleNav()">Nominations</a>
+    </li>
+    <li>
+      <a routerLink="contact-us" (click)="toggleNav()">Contact us</a>
+    </li>
   </ul>
-
-
 </div>
